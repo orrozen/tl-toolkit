@@ -1,0 +1,38 @@
+name: 🧰 Join the TL Toolkit waitlist
+description: Sign up to be notified when the toolkit launches
+title: "[waitlist] "
+labels: [waitlist]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in the **TL Toolkit** — `/sprint-planning`, `/morning-brief` and `/one-on-one-prep` for Claude Code.
+        Leave your details below and subscribe to this issue to hear when it launches.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. Dana Levi
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Role
+      placeholder: e.g. Team Lead / Engineering Manager / Backend Dev
+    validations:
+      required: true
+  - type: checkboxes
+    id: waiting
+    attributes:
+      label: Count me in
+      options:
+        - label: I'm waiting for the TL Toolkit 🚀
+          required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: What would you use it for?
+      description: Optional — helps prioritize what ships first.
+    validations:
+      required: false
